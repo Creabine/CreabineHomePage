@@ -4,10 +4,6 @@ from django.db import models
 class ContactMessage(models.Model):
     #称呼
     name = models.CharField('联系人名称', max_length=16)
-    # 公司名称
-    companyName = models.CharField('公司名称', max_length=32)
-    # 联系电话
-    telephone = models.CharField('联系人电话', max_length=16)
     # 联系邮箱
     email = models.EmailField('联系人邮箱')
     # 留下的信息
@@ -23,7 +19,7 @@ class ContactMessage(models.Model):
 
     # 用于admin中显示
     def __str__(self):
-        return self.companyName
+        return self.name
 
     def get_send_result(self):
         if self.sendSucceed == 1:
@@ -32,4 +28,3 @@ class ContactMessage(models.Model):
             return u'<span style="color:red;font-weight:bold">%s</span>' % (u"失败",)
     get_send_result.short_description = '邮件发送状态'
     get_send_result.allow_tags = True
-    #sendSucceedStr = property(get_send_result)

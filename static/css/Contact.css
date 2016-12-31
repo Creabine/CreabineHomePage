@@ -62,18 +62,17 @@ footer div img:last-child { width: 60px; height: 70px; }
 .top h1 { max-width: 980px; text-align: center; font-size: 2.5rem; color: #fff; padding: 150px 30px 0 30px; display: block; margin: 0 auto; line-height: 30px; }
 
 /* main */
-.main { width: 100%; min-height: 600px; background-color: #F5F7F7; text-align: left; margin: 0 0 150px 0; }
+.main { width: 100%; min-height: 600px; background-color: #F5F7F7; text-align: left; margin: 0 0 150px 0; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; }
 .main p { font-size: 1.5rem; padding: 20px 20px 0 20px; line-height: 1.8rem; max-width: 1000px; margin: 0 auto; }
 .main h1 { font-size: 2.5rem; padding: 30px 20px 0 20px; line-height: 2.5rem; max-width: 1000px; margin: 0 auto; }
-.main .center { text-align: center; }
-.main .itemContainer1 { display: flex; justify-content: center; align-items: center; align-content: center; flex-wrap: wrap; max-width: 1100px; margin: 0 auto; margin-top: 30px; }
-.main .itemContainer1 div { width: 140px; height: 140px; -moz-border-radius: 70px; -webkit-border-radius: 70px; border-radius: 70px; background-color: #999; text-align: center; line-height: 140px; font-size: 2rem; margin: 20px; }
-.main .itemContainer1 a { color: #666; text-decoration: none; }
-.main .itemContainer2 { display: flex; justify-content: center; align-items: center; align-content: center; flex-wrap: wrap; max-width: 1100px; margin: 0 auto; margin-top: 30px; }
-.main .itemContainer2 ul { max-width: 300px; height: 300px; text-align: center; font-size: 1.6rem; margin: 0 20px; color: #666; }
-.main .itemContainer2 ul li { margin-top: 20px; }
-.main .itemContainer3 { display: flex; justify-content: center; align-items: center; align-content: center; flex-wrap: wrap; max-width: 1100px; margin: 0 auto; margin-top: 30px; }
-.main .itemContainer3 img { width: 120px; height: 80px; text-align: center; margin: 10px 15px; }
-.main .moreInfo { color: #EA6060; text-decoration: none; margin-top: 0 auto; text-align: center; font-size: 1.6rem; display: block; margin: 0 auto; }
+.main .contactInfo { max-width: 500px; margin-right: 50px; margin-bottom: 50px; }
+.main .contactInfo .info { padding-top: 0; }
+.main .contactInfo .addr { margin-top: 30px; }
+.main .contactInfo .addr .tel { padding: 10px 0 0 50px; }
+.main .sendMessage { max-width: 500px; margin: 0 20px; }
+.main .sendMessage input { width: 100%; height: 40px; margin: 0 0 10px 0; padding: 0 10px 0 10px; border: 1px solid #666; }
+.main .sendMessage textarea { width: 100%; height: 190px; border: 1px solid #666; padding: 10px; }
+.main .sendMessage #submitBtn { display: none; }
+.main .sendMessage .submit { width: 150px; height: 40px; background-color: #EA6060; color: #fff; text-align: center; line-height: 40px; margin-top: 30px; float: right; cursor: pointer; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: 1.6rem; }
 
-/*# sourceMappingURL=Test.css.map */
+/*# sourceMappingURL=Contact.css.map */

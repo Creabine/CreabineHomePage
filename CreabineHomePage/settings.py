@@ -123,5 +123,17 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR,'static')
+    os.path.join(BASE_DIR,'static'),
 )
+
+
+# send e-mail
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.exmail.qq.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'charleschen@xmdaren.com'
+EMAIL_HOST_PASSWORD = 'Creabine04435026-'
+DEFAULT_FROM_EMAIL = 'Chenlei <charleschen@xmdaren.com>'
