@@ -1,0 +1,27 @@
+{
+  "name": "home_page",
+  "version": "1.0.0",
+  "description": "CreabineHomePage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Creabine",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "browsersync-ssi": "^0.2.4",
+    "clean": "^4.0.2",
+    "compass": "^0.1.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-compass": "^2.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-zip": "^3.2.0",
+    "plumber": "^0.4.8",
+    "run-sequence": "^1.2.2",
+    "ssi": "^0.3.0",
+    "zip": "^1.2.0"
+  }
+}

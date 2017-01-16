@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ContactUs</title>
+    <link rel="shortcut icon" href="static/img/favicon.ico"/>
+    <link rel="stylesheet" href="static/css/Contact.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+
+    <script src="static/js/jquery-3.1.1.js"></script>
+    <script src="static/js/common.js"></script>
+    <script src="static/js/Contact.js"></script>
+</head>
+<body id="allpage" onscroll="scrollfuntion()">
+
+  {% include "__header.html" %}
+
+  <div class="top">
+    <h1>联系我们</h1>
+  </div>
+  
+  <div class="main">
+    <div class="contactInfo">
+      <p class="info">
+        　　利用我们的技术和流程技巧、技术工具，帮助供应链伙伴成功降低成本、快速创新和提供可靠质量。整合我们的专业供应链平台，提供信息分享、价值链管理、协同研发设计、知识与技术分享、一站式外贸配套，提高供应链透明度和效率。
+      </p>
+      <div class="addr">
+        <p>福建省厦门市思明区湖滨南路90号立信广场1101A</p>
+        <p class="tel">T　0592-2102116</p>
+        <p class="tel">F　0592-2102106</p>
+
+        <p>上海市长宁区延安西路2299号世贸商城7G37</p>
+        <p class="tel">T　021-99999999</p>
+        <p class="tel">F　021-99999999</p>
+
+        <p>中国浙江省绍兴市柯桥安昌镇安昌路768号</p>
+        <p class="tel">M　186-5750-5790</p>
+        <p class="tel">M　189-5750-9210</p>
+      </div>
+    </div>
+
+    <div class="sendMessage">
+      <form method="post" action="ContactUs.html" id="ContactUsForm">
+          {% csrf_token %}
+          <input placeholder="Name" id="name" name="name" type="text" maxlength="16">
+          <input placeholder="Email" id="email" name="email" type="text">
+          <textarea placeholder="Message" name="message" id="message" cols="30" rows="10"></textarea>
+
+          <div class="submit" onclick="submitContactUs()">发送</div>
+          <button type="submit" id="submitBtn">提交</button>
+      </form>
+    </div>
+    
+    
+  </div>
+
+  {% include "__footer.html" %}
+
+  <div id="up" onclick="up()">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+  </div>
+
+
+</body>
+</html>
